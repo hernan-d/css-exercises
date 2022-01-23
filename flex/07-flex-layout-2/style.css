@@ -32,6 +32,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 ul,
@@ -63,13 +64,25 @@ a {
   min-width: 300px;
   padding: 16px;
 }
+
 .cards {
   display: flex;
   flex-direction: row;
-  flex: 0 1 auto;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-around;
+  align-content: center;
+  padding: 32px;
 }
 
 .card {
   min-width: 200px;
+  max-width: 300px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
